@@ -6,8 +6,33 @@ let button = document.getElementById('start');
 
 
 
+//código simplificado 
+
+button.onclick = function(){
+let randomNumber1 = Math.floor((Math.random() *6) + 1);
+let diceImage1 = 'dice' + randomNumber1 + '.png';
+let randomImageSource1 = './images/' + diceImage1;
+image1.setAttribute('src', randomImageSource1);
+
+let randomNumber2 = Math.floor((Math.random() *6) + 1);
+let diceImage2 = 'dice' + randomNumber2 + '.png';
+let randomImageSource2 = './images/' + diceImage2;
+image2.setAttribute('src', randomImageSource2);
+
+if(randomNumber1> randomNumber2){
+    title[0].innerHTML = "Player 1 won!"
+    } else if(randomNumber1 < randomNumber2){
+        title[0].innerHTML = "Player 2 won!"
+        }else if(randomNumber1 == randomNumber2){
+        title[0].innerHTML = "Play Again!"
+            }
 
 
+}
+
+
+
+/* Código anterior 
 //generate a random number 
 button.onclick = function(){
 let randomNumber1 = Math.random();
@@ -29,33 +54,35 @@ if(randomNumber1> randomNumber2){
 
 let randomImage1 = function(){
     if(randomNumber1 === 1){
-        image1.setAttribute('src', './images/dice1.png')
+        image1.setAttribute('src', 'images/dice1.png')
         }else if (randomNumber1 === 2){
-            image1.setAttribute('src', './images/dice2.png') 
+            image1.setAttribute('src', 'images/dice2.png') 
             }else if (randomNumber1 === 3){
-                image1.setAttribute('src', './images/dice3.png') 
+                image1.setAttribute('src', 'images/dice3.png') 
                 }else if (randomNumber1 === 4){
-                    image1.setAttribute('src', './images/dice4.png') 
+                    image1.setAttribute('src', 'images/dice4.png') 
                     }else if (randomNumber1 === 5){
-                        image1.setAttribute('src', './images/dice5.png') 
-                    }         
+                        image1.setAttribute('src', 'images/dice5.png') 
+                    } else {
+                        
+                    }        
 }
 
 let randomImage2 = function(){
     if(randomNumber2 === 1){
-        image2.setAttribute('src', './images/dice1.png')
+        image2.setAttribute('src', "images/dice1.png")
         }else if (randomNumber2 === 2){
-            image2.setAttribute('src', './images/dice2.png') 
+            image2.setAttribute('src', 'images/dice2.png') 
             }else if (randomNumber2 === 3){
-                image2.setAttribute('src', './images/dice3.png') 
+                image2.setAttribute('src', 'images/dice3.png') 
                 }else if (randomNumber2 === 4){
-                    image2.setAttribute('src', './images/dice4.png') 
+                    image2.setAttribute('src', 'images/dice4.png') 
                     }else if (randomNumber2 === 5){
-                        image2.setAttribute('src', './images/dice5.png') 
-                    }         
-}
+                        image2.setAttribute('src', 'images/dice5.png') 
+                    } else {
 
-
+                    }
+                    }       
 
 
 randomImage1();
@@ -63,3 +90,4 @@ randomImage2();
 
 
 }
+*/
