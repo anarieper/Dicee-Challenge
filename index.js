@@ -29,7 +29,7 @@ if(randomNumber1> randomNumber2){
 
 let randomImage1 = function(){
     if(randomNumber1 === 1){
-        image1.setAttribute('src', '/docs/images/dice1.png')
+        image1.setAttribute('src', 'images/dice1.png')
         }else if (randomNumber1 === 2){
             image1.setAttribute('src', '/docs/images/dice2.png') 
             }else if (randomNumber1 === 3){
@@ -43,7 +43,7 @@ let randomImage1 = function(){
 
 let randomImage2 = function(){
     if(randomNumber2 === 1){
-        image2.setAttribute('src', './images/dice1.png')
+        image2.setAttribute('src', 'images/dice1.png')
         }else if (randomNumber2 === 2){
             image2.setAttribute('src', './images/dice2.png') 
             }else if (randomNumber2 === 3){
