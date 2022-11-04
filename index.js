@@ -29,29 +29,29 @@ if(randomNumber1> randomNumber2){
 
 let randomImage1 = function(){
     if(randomNumber1 === 1){
-        image1.setAttribute('src', '/images/dice1.png')
+        image1.setAttribute('src', 'images/dice1.png')
         }else if (randomNumber1 === 2){
-            image1.setAttribute('src', '/images/dice2.png') 
+            image1.setAttribute('src', 'images/dice2.png') 
             }else if (randomNumber1 === 3){
-                image1.setAttribute('src', '/images/dice3.png') 
+                image1.setAttribute('src', 'images/dice3.png') 
                 }else if (randomNumber1 === 4){
-                    image1.setAttribute('src', '/images/dice4.png') 
+                    image1.setAttribute('src', 'images/dice4.png') 
                     }else if (randomNumber1 === 5){
-                        image1.setAttribute('src', '/images/dice5.png') 
+                        image1.setAttribute('src', 'images/dice5.png') 
                     }         
 }
 
 let randomImage2 = function(){
     if(randomNumber2 === 1){
-        image2.setAttribute('src', '/images/dice1.png')
+        image2.setAttribute('src', 'images/dice1.png')
         }else if (randomNumber2 === 2){
-            image2.setAttribute('src', '/images/dice2.png') 
+            image2.setAttribute('src', 'images/dice2.png') 
             }else if (randomNumber2 === 3){
-                image2.setAttribute('src', '/images/dice3.png') 
+                image2.setAttribute('src', 'images/dice3.png') 
                 }else if (randomNumber2 === 4){
-                    image2.setAttribute('src', '/images/dice4.png') 
+                    image2.setAttribute('src', 'images/dice4.png') 
                     }else if (randomNumber2 === 5){
-                        image2.setAttribute('src', '/images/dice5.png') 
+                        image2.setAttribute('src', 'images/dice5.png') 
                     }         
 }
 
